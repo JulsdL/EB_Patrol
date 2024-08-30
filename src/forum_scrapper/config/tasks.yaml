@@ -1,0 +1,15 @@
+scrape_discussions_task:
+  description: >
+    Scrape all discussions including questions and answers based on the {inputs}.
+    Crawl the site and extract all discussions with questions and answers.
+    Ensure all relevant information is captured accurately.
+  expected_output: >
+    A JSON file containing all subjects with questions and answers.
+
+format_to_markdown_task:
+  description: >
+    Convert the scraped discussions data into a markdown with appropriate formatting.
+    Include all questions and answers in a clear, readable structure by subject number.
+    Use the MarkdownWriterTool to save the formatted content into a file.
+  expected_output: >
+    A markdown file (.md) with the full discussions formatted by subject.

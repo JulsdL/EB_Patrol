@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "zooniverse-scraper"
+version = "0.1.0"
+description = ""
+authors = ["Julien de Lambilly <julien.delambilly@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "forum_scrapper", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = "^0.51.1"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.scripts]
+train = "forum_scrapper.train:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
